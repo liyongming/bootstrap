@@ -1,6 +1,7 @@
 # bootstrap
 应用bootstrap前端框架编写的页面
 #分支分工
+<hr>
 master--->code
 <hr>
 word----->文档
