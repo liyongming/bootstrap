@@ -11,28 +11,31 @@
             margin:0px 0px;
         }
         #iframeTop {
-            width:100%;
-            background-color:#6eb6de;
-            height:50px;
-            margin:0px 0px;
+            width: 100%;
+            height: 50px;
+            /*background-color: #6eb6de;*/
         }
-        #iframeTop  body {
+        #iframeTop  #document html body {
             margin:0px 0px;
         }
         #iframeBottom{
             width:100%;
-            background-color:#670d10;
+            height:50px;
+            /*background-color: #4a77d4;*/
         }
         #iframeLeft{
+            width:15%;
+            height: 660px;
+            float: left;
+            /*background-color: yellow;*/
+        }
+        #iframeLeft  #document html body {
             margin:0px 0px;
-            width:10%;
-            background-color:gold;
-            float:left;
-            height:700px;
         }
         #iframeRight{
-            width:80%;
-            background-color:#c0c0c0;
+            width: 85%;
+            height: 660px;
+            /*background-color: red;*/
         }
     </style>
 </head>
@@ -40,10 +43,11 @@
 <!--首页布局使用iframe-->
 <div>
     <!--编写的时候发现的问题，对于iframe的使用不是特别熟悉，着重强调，可以使用webstorm来查看iframe标签中的其他属性，在wrod中进行总结-->
-    <iframe id="iframeTop" allowtransparency="true">上面</iframe>
-    <iframe id="iframeLeft">左边</iframe>
-    <iframe id="iframeRight">右边</iframe>
-    <iframe id="iframeBottom">底部</iframe>
+    <!--iframe中存在外边距问题?如何解决-->
+    <iframe id="iframeTop" allowtransparency="true" frameborder="0" src="./top.html"></iframe>
+    <iframe id="iframeLeft" frameborder="0" scrolling="no" src="./left.html"></iframe>
+    <iframe id="iframeRight" frameborder="0" src="./right.html"></iframe>
+    <iframe id="iframeBottom" frameborder="0" src="./footer.html"></iframe>
 </div>
 </body>
 </html>
