@@ -5,9 +5,45 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>首页</title>
+    <style>
+        body{
+            margin:0px 0px;
+        }
+        #iframeTop {
+            width:100%;
+            background-color:#6eb6de;
+            height:50px;
+            margin:0px 0px;
+        }
+        #iframeTop  body {
+            margin:0px 0px;
+        }
+        #iframeBottom{
+            width:100%;
+            background-color:#670d10;
+        }
+        #iframeLeft{
+            margin:0px 0px;
+            width:10%;
+            background-color:gold;
+            float:left;
+            height:700px;
+        }
+        #iframeRight{
+            width:80%;
+            background-color:#c0c0c0;
+        }
+    </style>
 </head>
 <body>
-login is success ,to here and this page show the main page
+<!--首页布局使用iframe-->
+<div>
+    <!--编写的时候发现的问题，对于iframe的使用不是特别熟悉，着重强调，可以使用webstorm来查看iframe标签中的其他属性，在wrod中进行总结-->
+    <iframe id="iframeTop" allowtransparency="true">上面</iframe>
+    <iframe id="iframeLeft">左边</iframe>
+    <iframe id="iframeRight">右边</iframe>
+    <iframe id="iframeBottom">底部</iframe>
+</div>
 </body>
 </html>
