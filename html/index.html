@@ -44,10 +44,11 @@
 <div>
     <!--编写的时候发现的问题，对于iframe的使用不是特别熟悉，着重强调，可以使用webstorm来查看iframe标签中的其他属性，在wrod中进行总结-->
     <!--iframe中存在外边距问题?如何解决-->
-    <iframe id="iframeTop" allowtransparency="true" frameborder="0" src="./top.html"></iframe>
-    <iframe id="iframeLeft" frameborder="0" scrolling="no" src="./left.html"></iframe>
-    <iframe id="iframeRight" frameborder="0" src="./right.html"></iframe>
-    <iframe id="iframeBottom" frameborder="0" src="./footer.html"></iframe>
+    <!--iframe中测出name的意思是，在点击左侧链接的时候，可以实现右侧的变化-->
+    <iframe id="iframeTop" name="iframeTop" allowtransparency="true" frameborder="0" src="./top.html"></iframe>
+    <iframe id="iframeLeft" name="iframeLeft" frameborder="0" scrolling="no" src="./left.html"></iframe>
+    <iframe id="iframeRight" name="iframeRight" frameborder="0" src="./right.html"></iframe>
+    <iframe id="iframeBottom" name="iframeButtom" frameborder="0" src="./footer.html"></iframe>
 </div>
 </body>
 </html>
