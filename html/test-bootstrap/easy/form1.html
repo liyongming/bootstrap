@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width，initial-scale=1.0“>-->
+	<title>实现流式布局需要挺入的css文件</title>
+	<link rel="stylesheet" href="../lib/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../css/esy.css">
+	<!--<link rel="stylesheet" href="../lib/dist/css/bootstrap-responsive.css">-->
+	<script src="../lib/dist/js/jquery-3.1.1.js" language=""></script>
+	<script src="../lib/dist/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container">
+		<form action="" class="form-search">
+			<input type="text" class="input-media search-query">
+			<button type="submit" class="btn">Search</button>
+		</form>
+		
+		
+		<form action="" class="form-inline">
+			<input type="text" class="input-small" placeholder="Email">
+			<input type="password" class="input-small" placeholder="password">
+			<label for="" class="checkbox">
+				<input type="checkbox">Remember me
+			</label>
+			<input type="text" class="input-media search-query">
+			<button type="submit" class="btn">Search</button>
+		</form>
+		
+			<form class="form-horizontal">
+			<div class="control-group">
+			<label class="control-label" for="inputEmail">Email</label>
+			<div class="controls">
+			<input type="text" id="inputEmail" placeholder="Email">
+			</div>
+			</div>
+			<div class="control-group">
+			<label class="control-label" for="inputPassword">Password</label>
+			<div class="controls">
+			<input type="password" id="inputPassword" placeholder="Password">
+			</div>
+			</div>
+			<div class="control-group">
+			<div class="controls">
+			<label class="checkbox">
+			Bootstrap预定义的CSS样式 ｜ 27
+			<input type="checkbox"> Remember me
+			</label>
+			<button type="submit" class="btn">Sign in</button>
+			</div>
+			</div>
+			</form>
+			
+			<input type="text" placeholder="Text input"><br>
+			<textarea rows="3"></textarea>
+			<label class="checkbox">
+				
+			<input type="checkbox" value="">
+			Option one is this and that-be sure to include why it's great.
+			</label>
+			<label class="radio">
+			<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+			Option one is this and that-be sure to include why it's great.
+			</label>
+			<label class="radio">
+			<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+			Option two can be something else, and selecting it will deselect option one
+			</label>
+			
+			<label for="option1" class="checkbox inline">
+			<input id="option1" type="checkbox" id="inlineCheckbox1" value="option1"> 1
+			</label>
+			<label for="option2" class="checkbox inline">
+			<input id="option2" type="checkbox" id="inlineCheckbox2" value="option2"> 2
+			</label>
+			<label for="option3" class="checkbox inline">
+			<input id="option3" type="checkbox" id="inlineCheckbox3" value="option3"> 3
+			</label>
+			
+			<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			</select>
+			<select multiple="multiple">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			</select>
+			
+			<div class="input-prepend">
+			<span class="add-on">@</span>
+			<input class="span2" id="prependedInput" type="text"
+			placeholder="Username">
+			</div>
+			<div class="input-append">
+			<input class="span2" id="appendedInput" type="text">
+			<span class="add-on">.00</span>
+			</div>
+			
+			<div class="input-prepend input-append">
+			<span class="add-on">$</span>
+			<input class="span2" id="appendedPrependedInput" type="text">
+			<span class="add-on">.00</span>
+			</div>
+			
+			<div class="input-append">
+			<input class="span2" id="appendedInputButtons" type="text">
+			<button class="btn" type="button">Search</button>
+			<button class="btn" type="button">Options</button>
+			</div>
+			
+			<form class="form-search">
+			<div class="input-append">
+			<input type="text" class="span2 search-query">
+			<button type="submit" class="btn">Search</button>
+			</div>
+			<div class="input-prepend">
+			<button type="submit" class="btn">Search</button>
+			<input type="text" class="span2 search-query">
+			</div>
+			</form>
+			
+			<input class="input-block-level" type="text" placeholder=".input-block-level">
+			<div class="form-actions">
+			<button type="submit" class="btn btn-info">Save changes</button>
+			<button type="button" class="btn">Cancel</button>
+			</div>
+			
+			<input class="input-xlarge" id="focusedInput" type="text" value="This is focused...">
+			
+			<input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+			
+			<div class="control-group warning">
+			<label class="control-label" for="inputWarning">Input with warning</label>
+			<div class="controls">
+			<input type="text" id="inputWarning">
+			<span class="help-inline">Something may have gone wrong</span>
+			</div>
+			</div>
+			<div class="control-group error">
+			<label class="control-label" for="inputError">Input with error</label>
+			<div class="controls">
+			<input type="text" id="inputError">
+			<span class="help-inline">Please correct the error</span>
+			</div>
+			</div>
+			<div class="control-group success">
+			<label class="control-label" for="inputSuccess">Input with success</label>
+			<div class="controls">
+			<input type="text" id="inputSuccess">
+			<span class="help-inline">Woohoo!</span>
+			</div>
+			</div>
+			
+			<a href="#" class="btn btn-large btn-primary disabled">Primary link</a>
+			<a href="#" class="btn btn-large disabled">Link</a>
+			
+			<i class="icon-edit"></i>
+			
+			<ul class="nav nav-list">
+			<li class="active"><a href="#"><i class="icon-home icon-white"></i>
+			Home</a></li>
+			<li><a href="#"><i class="icon-book"></i> Library</a></li>
+			<li><a href="#"><i class="icon-pencil"></i> Applications</a></li>
+			<li><a href="#"><i class="i"></i> Misc</a></li>
+			</ul>
+	</div>
+</body>
+</html>
+	

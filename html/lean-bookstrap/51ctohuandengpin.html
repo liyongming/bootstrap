@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<script> 
+ 
+Holder.run({ 
+    themes: { 
+        "simple":{ 
+            background:"#66FFCC", 
+            foreground:"#000", 
+            size:12 
+            } 
+    }, 
+    images: "#new" 
+    }) 
+ 
+ 
+</script> 
+ 
+	<script src="lib/dist/js/holder.js"></script>
+<style> 
+div{ 
+    margin:2px; 
+    } 
+ 
+</style> 
+<title>holder-demo</title> 
+</head> 
+ 
+<body> 
+<div style=" width:200px; background-color:#F9F"> 
+<img src="holder.js/200x100/22"> 
+第一示例 
+</div> 
+ 
+ 
+<!--#########################################--> 
+ 
+<div style="width:600"> 
+<span style=" width:200px;"> 
+<img data-src="holder.js/200x100/gray"> 
+ 
+</span> 
+<span style=" width:200px;"> 
+<img data-src="holder.js/200x100/industrial"> 
+ 
+</span> 
+<span style=" width:200px;"> 
+<img data-src="holder.js/200x100/social"> 
+</span> 
+</div> 
+<p style="background-color:#F9F; width:200px;">第二示例</p> 
+ 
+ 
+<!--  
+data-src 可以作为src的补充  也就是当图片存在时显示图片 如果图片不显示时 可以用这个占位并显示图片提示文字 
+gray/industrial/social  提供三种样式  默认为gray 
+ 
+--> 
+ 
+<!--#########################################--> 
+ 
+ 
+<script> Holder.add_theme("bright", { background: "#EEEEEE", foreground: "gray", size: 30,font: "Alex Brush",text:"hello 中国" })</script> 
+<div style=" width:200px; background-color:#F9F"> 
+<img src="holder.js/200x100/bright"> 
+第三示例 
+</div> 
+ 
+<!--  
+可以自定义样式  后台颜色 前台颜色 字体大小 以及字体 不过字体为本机字体 不能引用外部字体   text显示提示文字 
+添加样式必须在引入holder.js之后 
+ 
+--> 
+ 
+<!--#########################################--> 
+ 
+ 
+ 
+ 
+<div style=" width:200px; background-color:#F9F"> 
+<img src="holder.js/200x100/#000:#fff/text:hello world/font:Alex Brush"> 
+第四示例 
+</div> 
+ 
+<!--  
+所有参数都可以在 src中定义 /宽*高/后天颜色:前台字体颜色/显示文字/字体 
+ 
+--> 
+ 
+<!--#########################################--> 
+ 
+ 
+<div style=" width:500px; background-color:#F9F"> 
+<img data-src="holder.js/100%x75/industrial"> 
+第五示例 
+</div> 
+ 
+<!--  
+百分比指定维度创建流体的占位符/字体 
+ 
+--> 
+ 
+<!--#########################################--> 
+ 
+ 
+ 
+<style> #sample {url(holder.js /200x100/social) no-repeat}</style> 
+<div style=" width:200px; background-color:#F9F"> 
+<div id="sample" class="holderjs">原来是可以的啊 不过高度不对啊 这是怎么回事呢啊 难道说是最大高度么 看来得有内容填充到那里才能够显示啊 !!!!</div> 
+第六示例 
+</div> 
+ 
+<!--  
+可以用css样式来显示某个元素背景 
+Holder.run({domain:"example.com"}) 可以设定参数  比如class的参数也可以用这种方法修改 
+ 
+--> 
+ 
+<!--#########################################--> 
+ 
+ 
+<style> #sample {url(holder.js /200x100/social) no-repeat}</style> 
+<div style=" width:200px; background-color:#F9F"> 
+<img data-src="holder.js/200x100/simple" id="new"> 
+第七示例 
+</div> 
+ 
+<!--  
+可以用css样式来显示某个元素背景 
+Holder.run({domain:"example.com"}) 可以设定参数  比如class的参数也可以用这种方法修改 
+ 
+--> 
+ 
+<!--#########################################--> 
+ 
+ 
+</body> 
+</html> 

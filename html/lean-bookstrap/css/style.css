@@ -1,0 +1,33 @@
+body{
+	padding-top: 100px;
+}
+.navbar-inverse input[type="text"]{
+		background:#313131;
+		border: none;
+		color:#999;
+}
+.navbar-inverse .navbar-form{
+	position: relative;
+}
+.navbar-form button[type="submit"]{
+	position: absolute;
+	top: 35%;
+	right: 20px;
+	background: none;
+	border: none;
+}
+/*设置按钮在其他媒体上面的显示*/
+@media(min-width:768px){
+	.navbar-inverse button[type="submit"]{
+		top:15%;
+	}
+}
+.navbar-inverse .navbar-form .glyphicon{
+	color:#999;
+}
+.navbar-form{
+	position: relative;
+}
+.profile{
+	margin-right: 25px;
+}
