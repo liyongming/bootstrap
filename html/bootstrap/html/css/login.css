@@ -1,0 +1,40 @@
+body {
+	background-color:#444444;
+	padding : 0px;
+	margin:0px;
+}
+#logo{
+	margin-left:90px;
+	margin-top:200px;
+}
+#loginbox{
+	width:400px;
+	/*margin-left:550px;*/
+	margin-top:15px;
+	background:#ffffff;
+	text-align:center;
+}
+#loginform {
+	z-index:200;
+}
+#loginform p{
+	padding-top:20px;
+	color:gray;
+}
+#recoverform{
+	display : none;
+	height:220px;
+}
+#recoverform p {
+	margin-top:20px;
+	padding-top:30px;
+}
+#recoverform .form-actions{
+	/*background-color:red;*/
+	margin-bottom:0px;
+	margin-top:65px;
+}
+.emails{
+	margin-top:40px;
+	/*background-color:red;*/
+}
